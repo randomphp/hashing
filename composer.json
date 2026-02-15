@@ -1,0 +1,24 @@
+{
+    "name": "randomphp/hashing",
+    "description": "Wrapper around PHP's \"password_hash\" function.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "RandomPHP\\Hashing\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Martin René Sørensen",
+            "email": "git@sicet7.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=8.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^13.0"
+    }
+}

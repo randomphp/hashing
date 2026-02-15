@@ -95,7 +95,7 @@ $newAlgo = Argon2IDHashingAlgorithm::make(
 );
 
 if (!$hash->verify($passwordAttempt)) {
-    // Do not continue the password did not match hash.
+    // Do not continue the password did not match the hash.
 }
 
 if ($hash->needsRehash($newAlgo)) {
@@ -216,11 +216,7 @@ use RandomPHP\Hashing\Hash;
 Hash::registerAlgorithm(MyCustomAlgorithm::class);
 ```
 
-Your algorithm must implement:
-
-- `public static function decode(string $hash): ?HashingAlgorithmInterface;`
-- `public static function fromArray(array $data): ?HashingAlgorithmInterface;`
-- `public function match(HashingAlgorithmInterface $algorithm): bool;`
+Your algorithm must implement the [HashingAlgorithmInterface](./src/Interface/HashingAlgorithmInterface.php)
 
 ---
 

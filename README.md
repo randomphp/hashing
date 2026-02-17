@@ -218,8 +218,3 @@ Hash::registerAlgorithm(MyCustomAlgorithm::class);
 
 Your algorithm must implement the [HashingAlgorithmInterface](./src/Interface/HashingAlgorithmInterface.php)
 
----
-
-## License
-
-[MIT](./LICENSE)

@@ -2,7 +2,7 @@
     "name": "randomphp/hashing",
     "description": "A small, dependency-light PHP library that wraps PHP’s built-in password_hash() / password_verify() functions.",
     "type": "library",
-    "license": "MIT",
+    "license": "UNLICENSE",
     "autoload": {
         "psr-4": {
             "RandomPHP\\Hashing\\": "src/"
